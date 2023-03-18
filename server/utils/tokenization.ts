@@ -1,6 +1,4 @@
-import { TRPCError } from "@trpc/server";
 import { sign, verify, JwtPayload } from "jsonwebtoken";
-import { isStringLiteral } from "typescript";
 
 export interface Payload extends JwtPayload {
     id: number;

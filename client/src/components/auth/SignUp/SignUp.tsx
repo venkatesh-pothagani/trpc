@@ -10,6 +10,7 @@ const SignUp = () => {
     const mutation = trpc.signup.useMutation();
 
     if (mutation.isError) {
+        console.log("error occured");
     }
 
     if (mutation.isLoading) {
@@ -17,6 +18,7 @@ const SignUp = () => {
     }
 
     if (mutation.isSuccess) {
+        console.log("success");
     }
 
     const onFullNameChange = (event: ChangeEvent<HTMLInputElement>) => {

@@ -11,6 +11,7 @@ const AddTodo = () => {
     const mutation = trpc.addToDo.useMutation();
 
     if (mutation.isSuccess) {
+        console.log("success")
     }
 
     const onTitleChange = (event: ChangeEvent<HTMLInputElement>) => {
